@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    /* overflow: hidden; */
+}
+body {
+    background: #c2e2ec;
+    font: 14px 'Fira Sans', Helvetica, Arial, sans-serif;
+}
+.content {
+    background-color: rgb(248, 222, 222);
+    min-width: 230px;
+	max-width: 550px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 10%;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+header {
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+header h1 {
+    position: absolute;
+    top: -150px;
+    left: 30%;
+    color: #ffffff;
+    font-size: 100px;
+}
+.form-control::placeholder {
+    color: #cccccc;
+    font-style: italic;
+    font-size: 18px;
+}
+.container {
+    background-color: #c2e2ec;
+    border-radius: 5px;
+    padding: 10px;
+    display: none;
+}
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.checkbox {
+    display: none;
+}
+.fakecheckbox {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border: 2px #fff solid;
+    margin-top: 15px;
+}
+.fakecheckbox::before{
+    content: "";
+    position: absolute;
+    display: block;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    opacity: 0;
+    transition: .5s;
+    transform: translate(-2px, -2px);
+}
+.checkbox:checked + .fakecheckbox::before {
+    opacity: 1;
+}
+.done {
+    text-decoration: line-through;
+    opacity: 0.7;
+    color: #cccccc;
+}
+.task_name {
+    border: none;
+    outline: none;
+    background-color: #c2e2ec;
+    position: absolute;
+    left: 10%;
+    width: 70%;
+    user-select: none;
+    font-size: 25px;
+    color:#ffffff;
+}
+.removeTask {
+    display: inline-block;
+    position: relative;
+    width: 20px;
+    height: 20px;
+}
+.removeTask::before, .removeTask::after{
+    height: 3px;
+    width: 20px;
+    background-color: #ffffff;
+    position: absolute;
+    background-color: #fff;
+    content: ' ';
+    margin-top: 10px;
+    
+}
+.removeTask::before {
+    transform: rotate(45deg);
+}
+.removeTask::after {
+    transform: rotate(-45deg);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background-color: #c2e2ec;
+    font-size: 130%;
+    border-radius: 5px;
+    height: 50px;
+    align-items: center;
+    padding: 0;
+    color: #ffffff;
+}
+.span_count {
+    margin-left: 4%;
+}
+.show-types {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    margin-right: 20px;
+}
+.show-types input {
+    display: none;
+}
+.show-types label {
+    margin-bottom: 0;
+    padding: 1%;
+    border: 2px solid  #c2e2ec;
+}
+input:checked + label {
+    padding: 1%;
+    border-radius: 8px;
+    border: 2px solid  rgb(248, 222, 222);
+}
+.show-types label:hover {
+    border: 2px solid  rgba(248, 222, 222, 0.5);
+    padding: 1%;
+    border-radius: 8px;
+}
+input:checked + label:hover {
+    padding: 1%;
+    border-radius: 8px;
+    border: 2px solid  rgb(248, 222, 222);
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="content">
+        <header>
+            <h1>todos</h1>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control new_task" placeholder="Task name">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary" type="button">Add</button>
+                </div>
+              </div>
+        </header>
+        <section class="container">
+        </section>
+        <footer>
+            <hr>
+            <div class="footer">
+                <span class="span_count">item left</span>
+                <div class="show-types">
+                    <input type="radio" name="tasks" id="radio-1" checked>
+                    <label for="radio-1">All</label>
+                    <input type="radio" name="tasks" id="radio-2">
+                    <label for="radio-2">Completed</label>
+                    <input type="radio" name="tasks" id="radio-3">
+                    <label for="radio-3">Active</label>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script src="main.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
